@@ -2,7 +2,7 @@ FROM jekyll/jekyll:4
 
 RUN gem update bundler
 
-RUN wget -O /tmp/Gemfile https://raw.githubusercontent.com/HenriWahl/nagstamon-jekyll/main/docs/Gemfile
+COPY docs/Gemfile /tmp/Gemfile
 
 RUN bundle install --gemfile=/tmp/Gemfile
 
