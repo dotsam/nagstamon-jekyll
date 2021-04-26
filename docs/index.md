@@ -1,7 +1,9 @@
 ---
-layout: page
-show_in_header: false
+layout: home
+#show_in_header: false
 permalink: /
+header: true
+align: center
 ---
 
 ## About
